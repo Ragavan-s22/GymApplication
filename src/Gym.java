@@ -13,9 +13,9 @@ public class Gym {
         users.add(user);
     }
 
-    public User getUser(String name) {
+    public User getUser(String email) {
         for (User user : users) {
-            if (user.getName().equalsIgnoreCase(name)) {
+            if (user.getEmail().equalsIgnoreCase(email)) {
                 return user;
             }
         }
